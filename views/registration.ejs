@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100 min-h-screen flex items-center justify-center">
+
+  <div id="register" class="w-full max-w-md p-8 rounded-2xl backdrop-blur-md bg-white/30 border border-white/40 shadow-xl">
+    <h2 class="text-3xl font-semibold mb-6 text-center text-blue-700 drop-shadow">Create Account</h2>
+    <form name="register" method="POST" action="/users/register" class="space-y-5">
+      <input type="text" name="name" placeholder="Full Name"
+        class="w-full px-4 py-2 border border-white/30 bg-white/20 text-blue-900 placeholder-blue-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 backdrop-blur-sm" required />
+
+      <input type="email" name="email" placeholder="Email"
+        class="w-full px-4 py-2 border border-white/30 bg-white/20 text-blue-900 placeholder-blue-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 backdrop-blur-sm" required />
+
+      <input type="password" name="password" placeholder="Password"
+        class="w-full px-4 py-2 border border-white/30 bg-white/20 text-blue-900 placeholder-blue-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 backdrop-blur-sm" required />
+
+      <button type="submit"
+        class="w-full py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition duration-300">
+        Register
+      </button>
+
+      <p class="text-sm text-center text-blue-800">Already have an account?
+        <a href="/users/login" class="underline hover:text-blue-600">Login</a>
+      </p>
+    </form>
+  </div>
+
+</body>
+</html>
